@@ -1,3 +1,4 @@
-# Ansible Playbooks
+# Homelab-Ops
+A collection of infrastructure automation, scripts, and configs I use for homelab and sys administration tasks.
 
-A collection of Ansible playbooks and shell scripts
+The goal is to keep common setup tasks, random projects, and useful tooling in one place.
