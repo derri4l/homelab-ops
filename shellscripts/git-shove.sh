@@ -1,8 +1,8 @@
-# This is a helper script to merge dev into main with some safety checks and prompts.
+# This is a script to merge work from dev -> main .
 # Removes  the friction of manually checking out, syncing, merging, and pushing between branches.
 # Shows commit and diff summary before merging.
 
-# Install: git config --global alias.shove "!bash $HOME/scripts/gitshove.sh"
+# Install: git config --global alias.shove "!bash $HOME/<path_to_downloads>/git-shove.sh"
 # Run:     git shove
 
 #!/usr/bin/env bash
