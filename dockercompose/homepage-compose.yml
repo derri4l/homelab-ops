@@ -1,0 +1,12 @@
+# link to homepage: https://gethomepage.dev/
+
+services:
+  homepage:
+    image: gethomepage/homepage:latest
+    container_name: homepage
+    ports:
+      - 3000:3000
+    volumes:
+      - /path/to/config:/app/config # Make sure your local config directory exists, 'docker exec homepage sh' to enter
+    environment:
+      HOMEPAGE_ALLOWED_HOSTS: server.domain.local #or <ip_address>:3000
