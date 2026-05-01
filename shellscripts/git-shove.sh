@@ -1,9 +1,15 @@
-# This is a script to merge work from dev -> main .
-# Removes  the friction of manually checking out, syncing, merging, and pushing between branches.
-# Shows commit and diff summary before merging.
+# This is a script to safetly merge code from dev -> main .
 
-# Install: git config --global alias.shove "!bash $HOME/<path_to_downloads>/git-shove.sh"
-# Run:     git shove
+# What it does:
+# - Ensures you're inside a Git repo and have a clean working tree
+# - Forces workflow to start from the dev branch.
+# - Syncs both dev and main with origin
+# - Shows commits and diff summary before merging, then asks for confirmation.
+# - Performs a fast-forward-only merge (no merge commits)
+# - Pushes updated main to origin, then returns to the dev branch.
+
+# Install: git config --global alias.shove "!bash $HOME/<path_to_repo>/git-shove.sh"
+# Usage:     git shove
 
 #!/usr/bin/env bash
 
